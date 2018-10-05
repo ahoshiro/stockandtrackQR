@@ -32,7 +32,6 @@ console.log("description = "+description);
     {
         let printersSelect = document.getElementById('printersSelect');
         let printButton = document.getElementById('printButton');
-        // let textTextArea = document.getElementById('textTextArea');
              
         // loads all supported printers into a combo box 
         function loadPrinters()
