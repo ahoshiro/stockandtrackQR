@@ -76,7 +76,7 @@ console.log("description = "+description);
 
                 alert("Barcode Printed");
 
-                // location.replace("http://www.stockandtrack.com"); //after printing it will redirect the site to default stock and trac website. 
+                location.replace("http://www.stockandtrack.com"); //after printing it will redirect the site to default stock and trac website. 
                 
             }
             catch(e)
