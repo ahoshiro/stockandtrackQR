@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>DYMO Label Framework JavaScript Library Samples: QR-code</title> 
+<script src = "http://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript" charset="UTF-8"> </script>
+<!--<script src = "http://labelwriter.com/software/dls/sdk/js/DYMO.Label.Framework.latest.js" type="text/javascript" charset="UTF-8"> </script>-->
+<script src="http://www.labelwriter.com/software/dls/sdk/js/DYMO.Label.Framework.3.0.js" type="text/javascript" charset="UTF-8"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script> <!-- Used for Google Login script -->
+<script src = "dymo.js" type="text/javascript" charset="UTF-8"> </script>
+</head>
+
+<body>
+    <style>
+        body {
+            background: rgb(218, 224, 226) url("https://images.unsplash.com/photo-1515895309288-a3815ab7cf81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ea6525f071c1f79e4f353c9071b6583f&auto=format&fit=crop&w=750&q=80") no-repeat fixed center;
+            background-size: 1080px 800px;
+    }
+    </style>
+        
+<h1>STOCK AND TRACK QR code generator</h1> 
+
+ <div class="header">
+    <div id="sampleDesctiption">
+        <span>
+            <h2>Best if used with DYMO LabelWriter 450 series. Use label SKU 30334 for best results.</h2> 
+            <h3>If you plugged in your printer and it is not recognized, download drivers at http://dls.dymo.com/en-US/Pages/DLS8Download.aspx .</h3>
+        </span>
+    </div>
+</div>
+ 
+
+<div class="printControls">
+    <div id="printersDiv">
+        <label for="printersSelect">Printer:</label><br/>
+        <select id="printersSelect"></select>
+    </div>
+    <!-- <div id="textDiv">
+        <label for="textTextArea">Label text:</label><br/>
+        <textarea name="textTextArea" id="textTextArea"  rows='5' cols='40'></textarea>
+    </div> -->
+
+    <div id="printDiv">
+        <button id="printButton">Print Stock and Track Label (Barcode object)</button>
+    </div>
+</div>
+
+
+
+</body> 
+ 
+</html> 
