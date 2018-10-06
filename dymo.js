@@ -9,12 +9,14 @@ function getUrlParameter(name) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
+singleItemPage = getUrlParameter('singleItemPage');
 user = getUrlParameter('user');
 category = getUrlParameter('category');
 id = getUrlParameter('id');
 description = getUrlParameter('description');
 
 console.log("User = "+user);
+console.log("singleItemPage = "+singleItemPage);
 console.log("Category = "+category);
 console.log("ID = "+id);
 console.log("description = "+description);
@@ -24,7 +26,7 @@ console.log("description = "+description);
     // stores loaded label info
     let barcodeLabel;
     let label;
-    let urlLink = ('www.stockandtrack.com'+"/"+user+"/"+category+"/"+id);
+    let urlLink = ('www.stockandtrack.com'+"/"+singleItemPage+"/"+user+"/"+category+"/"+id);
     console.log("NEW URL LINK " + urlLink);
 
     // called when the document completly loaded
